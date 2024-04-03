@@ -7,7 +7,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./header_style.scss";
 
 import ContentWrapper from "../contentWrapper/contentWrapper";
-import logo from "../../assets/movix-logo.svg";
+import logo from "../../assets/movix-logo.png";
 
 const Header = () => {
     const [show, setShow] = useState("top");
@@ -23,7 +23,7 @@ const Header = () => {
     }, [location])
 
     const controlNavbar = () => {
-        console.log(window.scrollY);
+        //console.log(window.scrollY);
         if(window.scrollY > 200) {
             if(window.scrollY > lastScrollY && !mobileMenu) {
                 setShow("hide");
@@ -92,7 +92,7 @@ const Header = () => {
             <div className="mobileMenuItems">
                 <HiOutlineSearch onClick={openSearch} />
                 {mobileMenu ? (
-                    <VscChromeClose onClick={() => setMobileMenu(false)} />
+                    <input type="button" onClick={() => setMobileMenu(false)} className="dropDrownXbtn" />
                 ) : (
                     <SlMenu onClick={openMobileMenu}/>
                 )}
@@ -106,7 +106,7 @@ const Header = () => {
                     onChange={(e)=>setQuery(e.target.value)}
                     onKeyUp={searchQueryHandler}
                 />
-                <VscChromeClose onClick={() => setShowSearch(false)} />
+                <VscChromeClose onClick={() => setShowSearch(false)} style={{cursor: "pointer"}}/>
             </div>
             </ContentWrapper>
         </div>}

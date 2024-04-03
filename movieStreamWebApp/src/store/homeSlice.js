@@ -3,8 +3,8 @@ import { createSlice } from '@reduxjs/toolkit'
 export const homeSlice = createSlice({
   name: "home",
   initialState: {
-    url: {name: "sample name"},
-    genres: {},
+    url: {name: "initial sample url data value"},
+    genres: {name: "initial sample genres data value"},
   },
   reducers: {
     getAPIConfiguration: (state, action) => {

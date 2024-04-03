@@ -5,7 +5,7 @@ import "./genres_style.scss";
 
 const Genres = ({ data }) => {
   const {genres} = useSelector((state) => state.home);
-
+  
   return (
     <div className="genres">
         {data?.map((item) =>  {

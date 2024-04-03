@@ -16,6 +16,8 @@ import Genres from "../genres/Genres";
 import "./carousel_style.scss";
 
 const Carousel = ({ data, loading, endPoint, title }) => {
+    //console.log('passing movie data here >>>' + JSON.stringify(data));
+    //console.log('passing endpoint here >>>' + JSON.stringify(endPoint))
 
   const carouselContainer = useRef();
   const { url } = useSelector((state) => state.home);
@@ -64,14 +66,11 @@ const Carousel = ({ data, loading, endPoint, title }) => {
                         const posterUrl = item.poster_path 
                         ? url.poster + item.poster_path 
                         : PosterFallback;
-                        console.log( "results url for poster>> " + JSON.stringify(posterUrl));
                         return (
                             <div 
                                 key={item?.id}
                                 className="carouselItem" onClick = {()=> navigate(`/${item?.media_type 
-                                || endPoint 
-                                || `movie` 
-                                || `tv`}/${item.id}`)}>
+                                || endPoint}/${item.id}`)}>
                                     <div className="posterBlock">
                                         <Img src={posterUrl} />
                                         <CircleRating rating={item?.vote_average.toFixed(1)} />
