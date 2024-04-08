@@ -4,11 +4,13 @@ import {
     FaInstagram,
     FaTwitter,
     FaLinkedin,
+    FaGithub,
 } from "react-icons/fa";
 
 import ContentWrapper from "../contentWrapper/contentWrapper";
 
 import "./footer_style.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -36,13 +38,17 @@ const Footer = () => {
                 </div>
                 <div className="socialIcons">
                     <span className="icon">
+                    <Link to="https://www.facebook.com/kentshinj13" target="_blank">
                         <FaFacebookF />
+                    </Link>
                     </span>
                     <span className="icon">
                         <FaInstagram />
                     </span>
                     <span className="icon">
-                        <FaTwitter />
+                    <Link to="https://github.com/kentshin" target="_blank">
+                        <FaGithub />
+                    </Link>
                     </span>
                     <span className="icon">
                         <FaLinkedin />
