@@ -22,12 +22,17 @@ const Footer = () => {
                     <li className="menuItem">FAQ</li>
                 </ul>
                 <div className="infoText">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
+                The content provided on this website,is for general informational purposes only.
+                While we strive to keep the information up to date and accurate,
+                we make no representations or warranties of any kind, express or implied,
+                about the completeness, accuracy, reliability,
+                or availability with respect to the website or the information, services,
+                or related graphics contained on the website for any purpose.
+                <br></br>
+                Through this website, you can link to other websites that are not under the control of the creator.
+                We have no control over the nature, content, and availability of those sites.
+                <br/><br/>
+                Created by KNJ @2024.
                 </div>
                 <div className="socialIcons">
                     <span className="icon">
