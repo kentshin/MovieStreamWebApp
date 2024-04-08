@@ -32,7 +32,6 @@ const Footer = () => {
                 or related graphics contained on the website for any purpose.
                 <br></br>
                 Through this website, you can link to other websites that are not under the control of the creator.
-                We have no control over the nature, content, and availability of those sites.
                 <br/><br/>
                 Created by KNJ @2024.
                 </div>
