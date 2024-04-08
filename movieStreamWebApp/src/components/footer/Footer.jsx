@@ -31,9 +31,9 @@ const Footer = () => {
                 or availability with respect to the website or the information, services,
                 or related graphics contained on the website for any purpose.
                 <br></br>
-                Through this website, you can link to other websites that are not under the control of the creator.
+                Through this website, you can link to other websites that are not under the control of the developer.
                 <br/><br/>
-                Created by KNJ @2024.
+                Developed by KNJ @2024.
                 </div>
                 <div className="socialIcons">
                     <span className="icon">
