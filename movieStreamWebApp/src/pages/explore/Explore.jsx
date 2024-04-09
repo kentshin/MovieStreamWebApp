@@ -11,6 +11,8 @@ import ContentWrapper from "../../components/contentWrapper/contentWrapper";
 import MovieCard from "../../components/movieCard/MovieCard";
 import Spinner from "../../components/spinner/Spinner";
 
+import noResults from "../../assets/no-results.png";
+
 let filters = {};
 
 const sortbyData = [
@@ -87,7 +89,7 @@ const Explore = () => {
             setGenre(selectedItems);
             if (action.action !== "clear") {
                 let genreId = selectedItems.map((g) => g.id);
-            console.log("SelectedItems >>>" + JSON.stringify(selectedItems));
+            //console.log("SelectedItems >>>" + JSON.stringify(selectedItems));
             genreId = JSON.stringify(genreId).slice(1, -1);
                 filters.with_genres = genreId;
             } else {
@@ -159,7 +161,9 @@ const Explore = () => {
                         ) : (
                             <span className="resultNotFound">
                                 Sorry, Results not found!
+                                <img src={noResults} alt="" className="src"/>
                             </span>
+                            
                         )}
                     </>
                 )}
